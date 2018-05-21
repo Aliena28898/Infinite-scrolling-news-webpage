@@ -1,0 +1,13 @@
+.maintitle{
+    width: 100%;
+    text-align: center;
+    border-bottom: solid 1px red;
+    border-radius: 4px;
+}
+.mainContainer{
+    width: 100%;
+}
+
+.publiCell{
+    width: 300px;
+}
