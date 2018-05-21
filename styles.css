@@ -11,3 +11,17 @@
 .publiCell{
     width: 300px;
 }
+.publiCellMobile{
+    width: 100%;
+    height: 90px;
+    display: none;
+}
+
+@media only screen and (max-width: 765px) {
+    .publiCell {
+        display: none;
+    }
+    .publiCellMobile{
+        display: inline;
+    }
+}
