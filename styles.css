@@ -1,5 +1,4 @@
 .maintitle{
-    width: 100%;
     text-align: center;
     border-bottom: solid 1px red;
     border-radius: 4px;
@@ -10,6 +9,11 @@
 
 .publiCell{
     width: 300px;
+    background-color: green;
+}
+
+.contentCell{
+    width:400px;
 }
 .publiCellMobile{
     width: 100%;
