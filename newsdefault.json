@@ -1,5 +1,4 @@
-{
-    "noticia":[
+[
     {
         "id": "0",
         "date": "2018-04-25T18:25:43.511Z",
@@ -36,4 +35,4 @@
         "imgmidalt": "Port de Pollença",
         "video": "https://www.youtube.com/watch?v=gvwGD4Sg4Ew"
     }
-]}
+]
