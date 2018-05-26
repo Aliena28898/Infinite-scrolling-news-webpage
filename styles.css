@@ -8,17 +8,19 @@
 }
 
 .publiCell{
-    width: 300px;
+    width: 300px !important;
     background-color: green;
 }
 
-.contentCell{
-    width:400px;
-}
 .publiCellMobile{
     width: 100%;
     height: 90px;
+    background-color: blue;
     display: none;
+}
+
+.imgTitle{
+    max-width: 100%;
 }
 
 @media only screen and (max-width: 765px) {
@@ -26,6 +28,7 @@
         display: none;
     }
     .publiCellMobile{
-        display: inline;
+        display: block;
+        
     }
 }
