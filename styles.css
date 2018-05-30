@@ -40,10 +40,12 @@
     max-width: 90%;
 }
 
-.close{
-    z-index: 999999;
+body{
+    padding-right: 0px !important;
 }
-
+.modal{
+    padding-right: 0px !important;
+}
 @media only screen and (max-width: 765px) {
     .video{
         width: 426px;

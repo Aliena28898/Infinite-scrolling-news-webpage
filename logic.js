@@ -74,6 +74,8 @@ function pintar(json) {
 
         var button = document.createElement('button');
         button.setAttribute("class", "close");
+        button.setAttribute("data-dismiss", "modal");
+        button.setAttribute('data-target', '#' + arr[i].id);
         button.setAttribute("onclick", "closeModal(" + arr[i].id + ")");
         button.innerHTML = "&times;";
         modalhead.appendChild(button);
@@ -115,6 +117,8 @@ function pintar(json) {
 
         var buttonfoot = document.createElement('button');
         buttonfoot.setAttribute("class", "close");
+        buttonfoot.setAttribute("data-dismiss", "modal");
+        buttonfoot.setAttribute('data-target', '#' + arr[i].id);
         buttonfoot.setAttribute("onclick", "closeModal(" + arr[i].id + ")");
         buttonfoot.innerHTML = "Cerrar";
         modalfooter.appendChild(buttonfoot);
@@ -128,8 +132,8 @@ function closeModal(id) {
     //document.getElementById(id).removeClass("in");
     $(".modal-backdrop").remove();
     $('body').removeClass('modal-open');
-    $('body').css('padding-right', '');
-    document.getElementById(id).style.display = "none";
+    $('body').css('padding-right', '0px');
+    //document.getElementById(id).style.display = "none";
 }
 
 function abrirNoticia(id) {
