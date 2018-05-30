@@ -36,6 +36,14 @@
     font-weight: bold;
 }
 
+.imgmid{
+    max-width: 90%;
+}
+
+.close{
+    z-index: 999999;
+}
+
 @media only screen and (max-width: 765px) {
     .video{
         width: 426px;
