@@ -23,7 +23,24 @@
     max-width: 100%;
 }
 
+.noticia:hover{
+    cursor: pointer;
+}
+
+.video{
+    width: 640px;
+    height: 360px;
+}
+
+.noticiaSubTitle{
+    font-weight: bold;
+}
+
 @media only screen and (max-width: 765px) {
+    .video{
+        width: 426px;
+        height: 240px;
+    }
     .publiCell {
         display: none;
     }
