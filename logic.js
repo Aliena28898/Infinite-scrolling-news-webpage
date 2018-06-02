@@ -4,12 +4,17 @@ $(document).ready(function () {
         //en aquest punt l'objecte jsonObject correspon al fitxer
         pintar(data);
     });
-    $.getJSON("https://raw.githubusercontent.com/Aliena28898/Infinite-scrolling-news-webpage/8c584b7/newsdefault.json", function (data2) {
-        //en aquest punt l'objecte jsonObject correspon al fitxer
+    $(window).scroll(function () {
 
-        $(window).scroll(function () {
-            addNews(data2);
-        });
+
+        if (($(window).scrollTop()+window.innerHeight) > $(document).height()-150) {
+            $.getJSON("https://raw.githubusercontent.com/Aliena28898/Infinite-scrolling-news-webpage/ddfe4b891adfe88b5a49c524e8fbc594f4175083/news.json", function (data2) {
+                //en aquest punt l'objecte jsonObject correspon al fitxer
+                addNews(data2);
+            });
+        }
+
+
     });
 });
 
@@ -25,7 +30,7 @@ function addNews(data) {
     pintar(arr);
 }
 
-function openPubli(){
+function openPubli() {
     window.location.href = "https://www.youtube.com/watch?v=y0MKLnTqjLM";
 }
 
@@ -39,7 +44,7 @@ function pintar(json) {
         div.setAttribute('class', 'noticia');
         div.setAttribute('data-toggle', 'modal');
         div.setAttribute('data-target', '#' + arr[i].id);
-        div.setAttribute('onclick', 'openModal('+ arr[i].id+')');
+        div.setAttribute('onclick', 'openModal(' + arr[i].id + ')');
         noticias.append(div);
 
         var img = document.createElement('img');
@@ -129,8 +134,8 @@ function pintar(json) {
     }
 }
 
-function openModal(id){
-    document.getElementById(id).style.display="initial";
+function openModal(id) {
+    document.getElementById(id).style.display = "initial";
 }
 function closeModal(id) {
     //document.getElementById(id).removeClass("in");
