@@ -13,6 +13,11 @@
     display: none;
 }
 
+.loadButton{
+    color: red;
+    position: fixed;
+}
+
 .imgTitle{
     max-width: 100%;
 }

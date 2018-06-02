@@ -31,6 +31,8 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"></script>
     <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
     <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+
+    <link rel="alternate" type="application/rss+xml" title="Ultima Trola" href="rss.rss">
 </head>
 
 <body>
@@ -42,6 +44,9 @@
                 <img src="images/bannermobile.jpg"/>
             </a>
     </div>
+    <button class="loadButton" onclick="loadMore()">
+        Cargar más noticias
+    </button>
     <table class="mainContainer">
         <tr>
             <td class="contentCell" id="newsContainer">

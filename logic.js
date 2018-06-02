@@ -7,7 +7,7 @@ $(document).ready(function () {
     $(window).scroll(function () {
 
 
-        if (($(window).scrollTop()+window.innerHeight) > $(document).height()-150) {
+        if (($(window).scrollTop() + window.innerHeight) > $(document).height() - 150) {
             $.getJSON("https://raw.githubusercontent.com/Aliena28898/Infinite-scrolling-news-webpage/ddfe4b891adfe88b5a49c524e8fbc594f4175083/news.json", function (data2) {
                 //en aquest punt l'objecte jsonObject correspon al fitxer
                 addNews(data2);
@@ -18,6 +18,12 @@ $(document).ready(function () {
     });
 });
 
+function loadMore() {
+    $.getJSON("https://raw.githubusercontent.com/Aliena28898/Infinite-scrolling-news-webpage/ddfe4b891adfe88b5a49c524e8fbc594f4175083/news.json", function (data2) {
+        //en aquest punt l'objecte jsonObject correspon al fitxer
+        addNews(data2);
+    });
+}
 
 function addNews(data) {
     var arr = [];
