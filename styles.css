@@ -7,15 +7,9 @@
     width: 100%;
 }
 
-.publiCell{
-    width: 300px !important;
-    background-color: green;
-}
-
 .publiCellMobile{
     width: 100%;
     height: 90px;
-    background-color: blue;
     display: none;
 }
 
@@ -58,4 +52,45 @@ body{
         display: block;
         
     }
+}
+
+.publiLink{
+    width:100%;
+    height:100%;
+}
+
+.maintitle{
+    text-align: center;
+    border-bottom: solid 1px red;
+    border-radius: 4px;
+}
+.mainContainer{
+    width: 100%;
+    background-color: lightgray;
+}
+.publiCell{
+    width: 300px !important;
+    padding: 15px;
+    background-image: url("images/bannerLat.jpg");
+}
+
+.publiCell:hover{
+    cursor: pointer;
+}
+
+.noticia{
+    border: solid 1px red;
+    margin: 30px;
+    border-radius: 4px;
+    background-color: white;
+    padding: 15px;
+}
+
+.imgTitle{
+    margin: auto;
+    margin-bottom: 15px;
+}
+
+.imgTitle{
+    max-width: 100%;
 }

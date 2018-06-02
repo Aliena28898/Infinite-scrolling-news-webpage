@@ -25,6 +25,10 @@ function addNews(data) {
     pintar(arr);
 }
 
+function openPubli(){
+    window.location.href = "https://www.youtube.com/watch?v=y0MKLnTqjLM";
+}
+
 function pintar(json) {
     var arr = json;
 
